@@ -51,6 +51,7 @@
             this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Rehber Id";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtId
             // 
@@ -58,6 +59,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(223, 31);
             this.txtId.TabIndex = 1;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // btnList
             // 
@@ -79,6 +81,7 @@
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(1036, 641);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtName
             // 
@@ -86,6 +89,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(223, 31);
             this.txtName.TabIndex = 5;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label2
             // 
@@ -95,6 +99,7 @@
             this.label2.Size = new System.Drawing.Size(125, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Rehber Adı:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtSurname
             // 
@@ -102,6 +107,7 @@
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(223, 31);
             this.txtSurname.TabIndex = 7;
+            this.txtSurname.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
             // 
             // label3
             // 
@@ -111,6 +117,7 @@
             this.label3.Size = new System.Drawing.Size(154, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Rehber Soyadı";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnAdd
             // 
