@@ -32,23 +32,24 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtCountry = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnList = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDayNight = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.nudCapacity = new System.Windows.Forms.NumericUpDown();
+            this.cmbGuide = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapacity)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGetByID
@@ -70,6 +71,7 @@
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -80,6 +82,7 @@
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -90,13 +93,14 @@
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // txtSurname
+            // txtCountry
             // 
-            this.txtSurname.Location = new System.Drawing.Point(239, 204);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(223, 31);
-            this.txtSurname.TabIndex = 19;
+            this.txtCountry.Location = new System.Drawing.Point(239, 204);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(223, 31);
+            this.txtCountry.TabIndex = 19;
             // 
             // label3
             // 
@@ -107,12 +111,12 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Ülke:";
             // 
-            // txtName
+            // txtCity
             // 
-            this.txtName.Location = new System.Drawing.Point(239, 152);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(223, 31);
-            this.txtName.TabIndex = 17;
+            this.txtCity.Location = new System.Drawing.Point(239, 152);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(223, 31);
+            this.txtCity.TabIndex = 17;
             // 
             // label2
             // 
@@ -160,13 +164,6 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Lokasyon Id:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(239, 365);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 31);
-            this.textBox1.TabIndex = 29;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -176,12 +173,12 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "Rehber:";
             // 
-            // textBox2
+            // txtPrice
             // 
-            this.textBox2.Location = new System.Drawing.Point(239, 313);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(223, 31);
-            this.textBox2.TabIndex = 27;
+            this.txtPrice.Location = new System.Drawing.Point(239, 313);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(223, 31);
+            this.txtPrice.TabIndex = 27;
             // 
             // label5
             // 
@@ -192,13 +189,6 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Fiyat:";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(239, 263);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(223, 31);
-            this.textBox3.TabIndex = 25;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -208,12 +198,12 @@
             this.label6.TabIndex = 24;
             this.label6.Text = "Kapasite:";
             // 
-            // textBox4
+            // txtDayNight
             // 
-            this.textBox4.Location = new System.Drawing.Point(239, 419);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(223, 31);
-            this.textBox4.TabIndex = 31;
+            this.txtDayNight.Location = new System.Drawing.Point(239, 419);
+            this.txtDayNight.Name = "txtDayNight";
+            this.txtDayNight.Size = new System.Drawing.Size(223, 31);
+            this.txtDayNight.TabIndex = 31;
             // 
             // label7
             // 
@@ -224,26 +214,41 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "Gün Gece:";
             // 
+            // nudCapacity
+            // 
+            this.nudCapacity.Location = new System.Drawing.Point(239, 267);
+            this.nudCapacity.Name = "nudCapacity";
+            this.nudCapacity.Size = new System.Drawing.Size(223, 31);
+            this.nudCapacity.TabIndex = 32;
+            // 
+            // cmbGuide
+            // 
+            this.cmbGuide.FormattingEnabled = true;
+            this.cmbGuide.Location = new System.Drawing.Point(239, 361);
+            this.cmbGuide.Name = "cmbGuide";
+            this.cmbGuide.Size = new System.Drawing.Size(223, 33);
+            this.cmbGuide.TabIndex = 33;
+            // 
             // frmaNewLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1774, 969);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.cmbGuide);
+            this.Controls.Add(this.nudCapacity);
+            this.Controls.Add(this.txtDayNight);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnGetByID);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnList);
@@ -251,7 +256,9 @@
             this.Controls.Add(this.label1);
             this.Name = "frmaNewLocation";
             this.Text = "frmaNewLocation";
+            this.Load += new System.EventHandler(this.frmaNewLocation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapacity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,21 +270,21 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtCountry;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDayNight;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown nudCapacity;
+        private System.Windows.Forms.ComboBox cmbGuide;
     }
 }
