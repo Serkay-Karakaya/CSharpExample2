@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitim301.BusinessLayer.Abstract
 {
-    public interface IOrderService: IGenericService<Order>
+    public interface IOrderService : IGenericService<Order>
     {
+
     }
 }

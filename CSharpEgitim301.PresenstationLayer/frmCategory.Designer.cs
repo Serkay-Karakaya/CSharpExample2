@@ -47,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 172);
+            this.label1.Location = new System.Drawing.Point(61, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 25);
             this.label1.TabIndex = 0;
@@ -55,32 +55,33 @@
             // 
             // txtCategoryId
             // 
-            this.txtCategoryId.Location = new System.Drawing.Point(191, 166);
+            this.txtCategoryId.Location = new System.Drawing.Point(190, 116);
             this.txtCategoryId.Name = "txtCategoryId";
             this.txtCategoryId.Size = new System.Drawing.Size(234, 31);
             this.txtCategoryId.TabIndex = 1;
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(67, 381);
+            this.btnList.Location = new System.Drawing.Point(66, 331);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(191, 54);
             this.btnList.TabIndex = 2;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(542, 80);
+            this.dataGridView1.Location = new System.Drawing.Point(527, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1229, 681);
+            this.dataGridView1.Size = new System.Drawing.Size(741, 546);
             this.dataGridView1.TabIndex = 3;
             // 
             // txtCategoryName
             // 
-            this.txtCategoryName.Location = new System.Drawing.Point(191, 240);
+            this.txtCategoryName.Location = new System.Drawing.Point(190, 190);
             this.txtCategoryName.Name = "txtCategoryName";
             this.txtCategoryName.Size = new System.Drawing.Size(234, 31);
             this.txtCategoryName.TabIndex = 5;
@@ -88,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 246);
+            this.label2.Location = new System.Drawing.Point(50, 196);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 25);
             this.label2.TabIndex = 4;
@@ -97,7 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 321);
+            this.label3.Location = new System.Drawing.Point(18, 271);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 25);
             this.label3.TabIndex = 6;
@@ -106,7 +107,7 @@
             // rdbActive
             // 
             this.rdbActive.AutoSize = true;
-            this.rdbActive.Location = new System.Drawing.Point(192, 321);
+            this.rdbActive.Location = new System.Drawing.Point(191, 271);
             this.rdbActive.Name = "rdbActive";
             this.rdbActive.Size = new System.Drawing.Size(85, 29);
             this.rdbActive.TabIndex = 8;
@@ -117,7 +118,7 @@
             // rdbPassive
             // 
             this.rdbPassive.AutoSize = true;
-            this.rdbPassive.Location = new System.Drawing.Point(363, 321);
+            this.rdbPassive.Location = new System.Drawing.Point(362, 271);
             this.rdbPassive.Name = "rdbPassive";
             this.rdbPassive.Size = new System.Drawing.Size(91, 29);
             this.rdbPassive.TabIndex = 9;
@@ -127,45 +128,49 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(67, 461);
+            this.btnAdd.Location = new System.Drawing.Point(66, 411);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(191, 54);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(67, 553);
+            this.btnDelete.Location = new System.Drawing.Point(66, 503);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(191, 54);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(291, 422);
+            this.btnUpdate.Location = new System.Drawing.Point(290, 372);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(191, 54);
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnGetById
             // 
-            this.btnGetById.Location = new System.Drawing.Point(291, 520);
+            this.btnGetById.Location = new System.Drawing.Point(290, 470);
             this.btnGetById.Name = "btnGetById";
             this.btnGetById.Size = new System.Drawing.Size(191, 54);
             this.btnGetById.TabIndex = 13;
             this.btnGetById.Text = "Id\'ye Göre Getir";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // frmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1804, 867);
+            this.ClientSize = new System.Drawing.Size(1337, 690);
             this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -181,7 +186,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frmCategory";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

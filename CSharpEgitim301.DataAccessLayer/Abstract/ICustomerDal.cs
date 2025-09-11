@@ -9,6 +9,5 @@ namespace CSharpEgitim301.DataAccessLayer.Abstract
 {
     public interface ICustomerDal : IGenericDal<Customer>
     {
-        void Delete(Customer entity);
     }
 }

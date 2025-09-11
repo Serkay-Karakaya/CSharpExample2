@@ -16,7 +16,7 @@ namespace CSharpEgitim301.PresenstationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCategory());
+            Application.Run(new frmProduct());
         }
     }
 }

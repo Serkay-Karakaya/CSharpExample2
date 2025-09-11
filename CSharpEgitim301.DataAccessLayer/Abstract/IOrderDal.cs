@@ -9,5 +9,6 @@ namespace CSharpEgitim301.DataAccessLayer.Abstract
 {
     public interface IOrderDal : IGenericDal<Order>
     {
+
     }
 }
