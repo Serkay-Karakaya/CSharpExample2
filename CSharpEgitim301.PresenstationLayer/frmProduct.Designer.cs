@@ -68,6 +68,7 @@
             this.btnUpdate.TabIndex = 25;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -87,6 +88,7 @@
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtProductName
             // 
@@ -143,7 +145,7 @@
             // 
             // txtProductStock
             // 
-            this.txtProductStock.Location = new System.Drawing.Point(182, 173);
+            this.txtProductStock.Location = new System.Drawing.Point(195, 173);
             this.txtProductStock.Name = "txtProductStock";
             this.txtProductStock.Size = new System.Drawing.Size(234, 31);
             this.txtProductStock.TabIndex = 28;
@@ -244,6 +246,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmProduct";
             this.Text = "frmProduct";
+            this.Load += new System.EventHandler(this.frmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
