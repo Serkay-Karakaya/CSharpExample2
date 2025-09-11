@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpEgitim301.DataAccessLayer.Abstract
+namespace CSharpEgitim301.BusinessLayer.Abstract
 {
-    public interface ICustomerDal : IGenericDal<Customer>
+    public interface IProductService:IGenericService<Product>
     {
-        void Delete(Customer entity);
     }
 }

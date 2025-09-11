@@ -1,14 +1,14 @@
 ﻿using CSharpEgitim301.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpEgitim301.DataAccessLayer.Abstract
+namespace CSharpEgitim301.BusinessLayer.Abstract
 {
-    public interface ICustomerDal : IGenericDal<Customer>
+    public interface ICategoryService : IGenericService<Category>
     {
-        void Delete(Customer entity);
     }
 }

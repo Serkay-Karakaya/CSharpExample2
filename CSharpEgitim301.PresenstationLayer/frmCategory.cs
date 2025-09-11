@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CSharpEgitim301.PresenstationLayer
 {
-    public partial class Form1 : Form
+    public partial class frmCategory : Form
     {
-        public Form1()
+        public frmCategory()
         {
             InitializeComponent();
+        }
+
+        private void frmCategory_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
